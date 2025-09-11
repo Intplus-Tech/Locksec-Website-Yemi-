@@ -7,6 +7,7 @@ export default function HomePage(){
     <main className="space-y-4">
       <HeroPage />
       <SecondSection/>
+      
     </main>
      
    

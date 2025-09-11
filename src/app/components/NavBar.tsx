@@ -1,73 +1,107 @@
 "use client";
+
+import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { Menu, X } from "lucide-react";
 
-export default function NavBar(){
+export default function NavBar() {
+  const [isOpen, setIsOpen] = useState(false);
 
-  return(
- <section className="flex flex-row items-center justify-between ">
-  <div className="flex gap-3">
-    <div>
-          <Image
-            src="/lock-logo.png"
-            alt="locklogo"
-            height="44"
-            width="44"
-          />
-    </div>
+  return (
+    <nav className="w-full ">
+      <div className="flex items-center justify-between  py-3 ">
+        {/* Logo + Brand */}
+        <div className="flex items-center gap-2">
+          <Image src="/lock-logo.png" alt="locklogo" height={40} width={40} />
+          <h2 className="font-bold text-2xl md:text-[32px]">
+            Lock<span className="text-[#375DFB]">Sec</span>
+          </h2>
+        </div>
 
-        <h2 className="font-bold text-[32px]">Lock<span className="text-[#375DFB]">Sec</span></h2>
-  </div>
+        {/* Desktop Menu */}
+        <div className="hidden md:flex md:items-center md:gap-8">
+          <ul className="flex gap-6 font-medium text-[16px]">
+            <li>
+              <Link href="/">Home</Link>
+            </li>
+            <li>
+              <Link href="/">Features</Link>
+            </li>
+            <li>
+              <Link href="/">Price</Link>
+            </li>
+            <li>
+              <Link href="/">Contact</Link>
+            </li>
+          </ul>
+        </div>
 
-  <div className="flex max-w-[341px] pl-24">
-        <ul className="flex gap-[36px] font-medium font-inter text-[16px] ">
-
-          <li>
-            <Link href="/">
-              Home
-            </Link>
-          </li>
-     
-      <li>
-        <Link href="/">
-           Features
-        </Link>
-       
-      </li>
-      <li>
-        <Link href="/">
-        Price
-        </Link>
-      </li>
-      <li>
-            <Link href="/">
-              Contact
-            </Link></li>
-       </ul>
-  </div>
-
-  <div className="flex max-w-243px gap-[16px]">
-    
-      <button>
-      <Link href="/">
-        Login
-      </Link>
-      </button>
-    
-    
-        <button className="bg-[#244779] rounded p-2 w-[152px] h-[38px] text-[#FFFFFF] font-inter ">
-          <Link href="/">
+        {/* Desktop Buttons */}
+        <div className="hidden md:flex items-center gap-4">
+          <Link href="/" className="text-[#244779] font-medium">
+            Login
+          </Link>
+          <Link
+            href="/"
+            className="bg-[#244779] rounded-lg px-4 py-2 text-white font-medium"
+          >
             Create account
           </Link>
+        </div>
+
+        {/* Mobile Hamburger */}
+        <button
+          onClick={() => setIsOpen(!isOpen)}
+          className="md:hidden p-2 rounded-lg border border-gray-300"
+        >
+          {isOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
-  
-    
-  </div>
+      </div>
 
- 
-
- 
- </section>
-
-  )
+      {/* Mobile Menu */}
+      {isOpen && (
+        <div className="md:hidden bg-white px-2 pb-4 space-y-4">
+          <ul className="flex flex-col gap-4 font-medium text-[16px]">
+            <li>
+              <Link href="/" onClick={() => setIsOpen(false)}>
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link href="/" onClick={() => setIsOpen(false)}>
+                Features
+              </Link>
+            </li>
+            <li>
+              <Link href="/" onClick={() => setIsOpen(false)}>
+                Price
+              </Link>
+            </li>
+            <li>
+              <Link href="/" onClick={() => setIsOpen(false)}>
+                Contact
+              </Link>
+            </li>
+          </ul>
+          <div className="flex flex-col gap-2">
+            <Link
+              href="/"
+              className="text-[#244779] text-center font-medium"
+              onClick={() => setIsOpen(false)}
+            >
+              Login
+            </Link>
+            <Link
+              href="/"
+              className="bg-[#244779] rounded-lg px-4 py-2 text-center text-white font-medium"
+              onClick={() => setIsOpen(false)}
+            >
+              Create account
+            </Link>
+          </div>
+        </div>
+      )}
+    </nav>
+  );
 }

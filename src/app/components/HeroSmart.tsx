@@ -3,58 +3,65 @@ import Image from "next/image";
 
 export default function HeroSmart() {
   return (
-    <main className="flex items-center justify-between w-full gap-6">
+    <main className="flex flex-col-reverse lg:flex-row items-center justify-between w-full space-x-24">
       {/* TEXT SECTION */}
-      <section className="flex flex-col justify-center flex-1 mx-auto mt-8">
+      <section className="flex flex-col justify-center flex-1 mx-auto mt-6 text-center lg:text-left">
         <div>
-          <p className="font-medium text-[45px] leading-tight">
+          <p className="font-medium text-2xl sm:text-3xl lg:text-[45px] leading-tight">
             Smart <span className="font-bold"> control Account &</span>
           </p>
-          <p className="text-[45px] font-bold leading-tight whitespace-nowrap">
+          <p className="text-2xl sm:text-3xl lg:text-[45px] font-bold leading-tight">
             Automated Revenue Collection
           </p>
-          <p className="leading-tight font-medium text-[45px]">For Gated Communities</p>
+          <p className="font-medium text-2xl sm:text-3xl lg:text-[45px] leading-tight">
+            For Gated Communities
+          </p>
         </div>
 
-        <div className="mt-4 text-[16px] font-semibold">
+        <div className="mt-4 text-sm sm:text-base lg:text-[16px] font-semibold">
           <p>
-            Generate visitor codes, track entries, and collect dues
-            seamlessly—all from one
+            Generate visitor codes, track entries, and collect dues seamlessly—
+            all from one
           </p>
           <p>secure platform.</p>
         </div>
 
-        <div className="flex gap-3 mt-6 items-center">
+        <div className="flex flex-col sm:flex-row gap-4 mt-6 items-center justify-center lg:justify-start">
           <button className="bg-[#244779] rounded p-2 w-[152px] h-[38px] text-[#FFFFFF] font-inter">
             Get Started
           </button>
-          <div className="w-10 h-10 border border-gray-300 rounded-full overflow-hidden flex items-center justify-center">
-            <Image src="/Shape-bg.png" alt="Video" height={13} width={13} />
+          <div className="flex items-center gap-2">
+            <div className="w-10 h-10 border border-gray-300 rounded-full flex items-center justify-center">
+              <Image src="/Shape-bg.png" alt="Video" height={13} width={13} />
+            </div>
+            <p className="text-lg sm:text-xl lg:text-[22px] font-semibold">
+              Watch videos
+            </p>
           </div>
-          <p className="text-[22px] font-semibold">Watch videos</p>
         </div>
       </section>
 
       {/* IMAGE SECTION */}
-      <section className="relative flex-shrink-0 flex items-center -ml-[13.5rem]">
-        <div className="relative ">
+      <section className="relative flex-shrink-0 flex items-center lg:-ml-[23.5rem]">
+        <div className="relative w-full flex justify-center">
           <Image
             src="/security-bg.png"
             alt="Security"
             width={550}
             height={420}
-            className="mt-12 w-[655px] h-[420px]"
+            className="mt-8 w-[85%] sm:w-[90%] max-w-[655px] h-auto lg:mt-12 lg:w-[655px] lg:h-[420px]"
           />
           <Image
             src="/iphone-bg.png"
             alt="iPhone"
             width={230}
             height={380}
-            className="absolute top-2 right-9"
+            className="absolute top-2 right-4 sm:right-9 w-[35%] sm:w-[40%] max-w-[230px] h-auto lg:w-[230px] lg:h-[380px]"
           />
-         
         </div>
       </section>
+
+
     </main>
   );
 }

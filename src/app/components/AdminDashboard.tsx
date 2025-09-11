@@ -11,9 +11,9 @@ export default function AdminDashboard() {
                  border border-gray-300 rounded-[24px] overflow-hidden 
                  flex flex-col"
     >
-      {/* Circle background */}
-      <div className="absolute inset-0 flex items-center justify-center -mt-[5rem] sm:-mt-[6rem] md:-mt-40">
-        <div className="w-[140px] h-[140px] sm:w-[200px] sm:h-[200px] md:w-[266px] md:h-[266px] bg-[#E7F4FB] rounded-full" />
+      {/* Circle background (only visible on desktop) */}
+      <div className="absolute inset-0 hidden md:flex items-center justify-center -mt-40">
+        <div className="w-[266px] h-[266px] bg-[#E7F4FB] rounded-full" />
       </div>
 
       {/* Section heading */}
@@ -26,7 +26,7 @@ export default function AdminDashboard() {
         </p>
       </div>
 
-      {/* Image */}
+      {/* ResidentImage stays centered on all devices */}
       <div className="relative z-10 flex justify-center my-6 px-2">
         <ResidentImage />
       </div>
