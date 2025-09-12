@@ -6,11 +6,11 @@ import NavBar from "./NavBar";
 
 export default function HeroPage() {
   return (
-    <main className="bg-[url('/hero-bg.png')] bg-cover min-h-screen w-full">
+    <main className="bg-[url('/lines-bg.png')] bg-cover min-h-screen w-full">
       <ContentWrapper>
         <NavBar />
         <HeroSmart />
-      </ContentWrapper>
+        </ContentWrapper>
     </main>
   );
 }

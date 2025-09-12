@@ -27,7 +27,7 @@ const FooterBox = () => {
           setLoading(false);
         },
         (error) => {
-          alert("❌ Failed to send email. Please try again.");
+          alert("Failed to send email. Please try again.");
           console.error(error);
           setLoading(false);
         }
