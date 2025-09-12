@@ -7,18 +7,18 @@ export default function HeroSmart() {
       {/* TEXT SECTION */}
       <section className="flex flex-col justify-center flex-1 mx-auto mt-6 text-center lg:text-left">
         <div>
-          <p className="font-medium text-2xl sm:text-3xl lg:text-[45px] leading-tight">
+          <p className="font-medium text-2xl sm:text-3xl lg:text-[45px] leading-tight text-[#30404D]">
             Smart <span className="font-bold"> control Account &</span>
           </p>
-          <p className="text-2xl sm:text-3xl lg:text-[45px] font-bold leading-tight">
+          <p className="text-2xl sm:text-3xl lg:text-[45px] font-bold leading-tight text-[#30404D]">
             Automated Revenue Collection
           </p>
-          <p className="font-medium text-2xl sm:text-3xl lg:text-[45px] leading-tight">
+          <p className="font-medium text-2xl sm:text-3xl lg:text-[45px] leading-tight text-[#30404D]">
             For Gated Communities
           </p>
         </div>
 
-        <div className="mt-4 text-sm sm:text-base lg:text-[16px] font-semibold">
+        <div className="mt-4 text-sm sm:text-base lg:text-[16px] font-semibold text-[#30404D]">
           <p>
             Generate visitor codes, track entries, and collect dues seamlessly—
             all from one
@@ -34,7 +34,7 @@ export default function HeroSmart() {
             <div className="w-10 h-10 border border-gray-300 rounded-full flex items-center justify-center">
               <Image src="/Shape-bg.png" alt="Video" height={13} width={13} />
             </div>
-            <p className="text-lg sm:text-xl lg:text-[22px] font-semibold">
+            <p className="text-lg sm:text-xl lg:text-[22px] font-semibold text-[#30404D]">
               Watch videos
             </p>
           </div>

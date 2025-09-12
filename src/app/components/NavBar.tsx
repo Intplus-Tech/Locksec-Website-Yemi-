@@ -14,7 +14,7 @@ export default function NavBar() {
         {/* Logo + Brand */}
         <div className="flex items-center gap-2">
           <Image src="/lock-logo.png" alt="locklogo" height={40} width={40} />
-          <h2 className="font-bold text-2xl md:text-[32px]">
+          <h2 className="font-bold text-2xl md:text-[32px] text-black">
             Lock<span className="text-[#375DFB]">Sec</span>
           </h2>
         </div>
@@ -22,16 +22,16 @@ export default function NavBar() {
         {/* Desktop Menu */}
         <div className="hidden md:flex md:items-center md:gap-8">
           <ul className="flex gap-6 font-medium text-[16px]">
-            <li>
+            <li className="text-[#36364ACC]">
               <Link href="/">Home</Link>
             </li>
-            <li>
+            <li className="text-[#36364ACC]">
               <Link href="/">Features</Link>
             </li>
-            <li>
+            <li className="text-[#36364ACC]">
               <Link href="/">Price</Link>
             </li>
-            <li>
+            <li className="text-[#36364ACC]">
               <Link href="/">Contact</Link>
             </li>
           </ul>

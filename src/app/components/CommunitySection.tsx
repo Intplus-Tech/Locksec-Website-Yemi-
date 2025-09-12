@@ -11,7 +11,7 @@ export default function CommunitySection() {
         relative 
         w-full max-w-[1200px] h-auto min-h-[512px] 
         mx-auto  py-8 
-        bg-[url('/linebg.png')] bg-cover bg-white 
+        bg-[url('/Frame.png')] bg-cover bg-white 
         border-2 border-gray-300 rounded-[24px] 
         overflow-hidden
       "
