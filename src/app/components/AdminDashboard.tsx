@@ -6,16 +6,13 @@ export default function AdminDashboard() {
   return (
     <section
       className="relative w-full max-w-[600px] min-h-[665px] mx-auto 
-                 p-5 sm:p-6 lg:p-8
-                 bg-[url('/linebg.png')] bg-cover bg-white 
-                 border border-gray-300 rounded-[24px] overflow-hidden 
-                 flex flex-col"
+             p-5 sm:p-6 lg:p-8
+             bg-[url('/Adminframe-bg.png')] bg-cover bg-[position:50%_center] sm:bg-center bg-white 
+             border border-gray-300 rounded-[24px] overflow-hidden 
+             flex flex-col"
     >
-      {/* Circle background (only visible on desktop) */}
-      <div className="absolute inset-0 hidden md:flex items-center justify-center -mt-40">
-        <div className="w-[266px] h-[266px] bg-[#E7F4FB] rounded-full" />
-      </div>
-
+      
+     
       {/* Section heading */}
       <div className="relative z-10 text-center px-2">
         <h2 className="text-lg sm:text-xl md:text-2xl font-bold">
@@ -27,9 +24,10 @@ export default function AdminDashboard() {
       </div>
 
       {/* ResidentImage stays centered on all devices */}
-      <div className="relative z-10 flex justify-center my-6 px-2">
+      <div className="relative z-10 flex justify-center my-auto sm:my-6 px-2">
         <ResidentImage />
       </div>
+
 
       {/* Feature list */}
       <div className="relative z-20 mt-auto space-y-4 text-center sm:text-left px-2">

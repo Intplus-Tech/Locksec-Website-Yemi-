@@ -7,14 +7,12 @@ export default function VisitorCode() {
     <section
       className="relative w-full max-w-[590px] min-h-[650px] mx-auto 
                  p-4 sm:p-6 
-                 bg-[url('/linebg.png')] bg-cover bg-white 
+                 bg-[url('/visitorframe-bg.png')] bg-cover bg-[position:45%_center] sm:bg-center bg-white 
                  border-2 border-gray-300 rounded-[24px] overflow-hidden 
                  flex flex-col"
     >
       {/* Circle background for desktop */}
-      <div className="absolute inset-0 hidden md:flex items-center justify-center -mt-40">
-        <div className="w-[266px] h-[266px] bg-[#E7F4FB] rounded-full" />
-      </div>
+     
 
       {/* Heading */}
       <div className="relative z-20 text-center sm:text-left">
@@ -26,21 +24,13 @@ export default function VisitorCode() {
         </p>
       </div>
 
-      {/* Circle + Phone (stacked & centered on small devices) */}
-      <div className="relative z-10 flex justify-center my-6 md:hidden">
-        <div className="relative flex items-center justify-center">
-          {/* Circle */}
-          <div className="w-[140px] h-[140px] sm:w-[200px] sm:h-[200px] bg-[#E7F4FB] rounded-full flex items-center justify-center">
-            {/* Phone inside circle */}
-            <PhoneImage />
-          </div>
-        </div>
-      </div>
-
-      {/* Phone only (desktop) */}
-      <div className="relative z-10 hidden md:flex justify-center my-6">
+      <div className="relative z-10 flex justify-center my-auto sm:my-6 px-2">
         <PhoneImage />
-      </div>
+     </div>
+           
+          
+
+      
 
       {/* Features */}
       <div className="relative z-20 mt-auto space-y-4 text-center sm:text-left">
