@@ -14,7 +14,7 @@ export default function PaymentText() {
 
       <div className="space-y-4">
         <div>
-          <h2 className="w-full sm:w-[500px] font-bold text-[14px]">
+          <h2 className="w-full sm:w-[500px] font-bold text-[14px] text-[#30404D]">
             Real-Time Payment Monitoring
           </h2>
           <p className="w-full sm:w-[501px] text-[#394B59] text-[12px] font-normal">
@@ -23,7 +23,7 @@ export default function PaymentText() {
         </div>
 
         <div>
-          <h2 className="w-full sm:w-[500px] font-bold text-[14px]">
+          <h2 className="w-full sm:w-[500px] font-bold text-[14px] text-[#30404D]">
             Customizable Billing Cycles
           </h2>
           <p className="w-full sm:w-[501px] text-[#394B59] text-[12px] font-normal">
@@ -32,7 +32,7 @@ export default function PaymentText() {
         </div>
 
         <div>
-          <h2 className="w-full sm:w-[500px] font-bold text-[14px]">
+          <h2 className="w-full sm:w-[500px] font-bold text-[14px] text-[#30404D]">
             Financial Reporting
           </h2>
           <p className="w-full sm:w-[501px] text-[#394B59] text-[12px] font-normal">

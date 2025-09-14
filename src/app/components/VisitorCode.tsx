@@ -11,7 +11,6 @@ export default function VisitorCode() {
                  border-2 border-gray-300 rounded-[24px] overflow-hidden 
                  flex flex-col"
     >
-      {/* Circle background for desktop */}
      
 
       {/* Heading */}
@@ -34,27 +33,27 @@ export default function VisitorCode() {
 
       {/* Features */}
       <div className="relative z-20 mt-auto space-y-4 text-center sm:text-left">
-        <div>
-          <h2 className="font-semibold text-sm sm:text-base md:text-lg">
+        <div className="text-[#30404D]">
+          <h2 className="font-semibold text-sm sm:text-base md:text-lg text-[#30404D]">
             Instant Digital Codes
           </h2>
-          <p className="text-xs sm:text-sm md:text-base font-light">
+          <p className="text-xs sm:text-sm md:text-base font-light text-[#30404D]">
             Instant generation (Installable Mobile App)
           </p>
         </div>
         <div>
-          <h2 className="font-semibold text-sm sm:text-base md:text-lg">
+          <h2 className="font-semibold text-sm sm:text-base md:text-lg text-[#30404D]">
             Smart Delivery Access
           </h2>
-          <p className="text-xs sm:text-sm md:text-base font-light">
+          <p className="text-xs sm:text-sm md:text-base font-light text-[#30404D]">
             Delivery-specific codes (auto-expiry + logs)
           </p>
         </div>
         <div>
-          <h2 className="font-semibold text-sm sm:text-base md:text-lg">
+          <h2 className="font-semibold text-sm sm:text-base md:text-lg text-[#30404D]">
             Custom Access Rules
           </h2>
-          <p className="text-xs sm:text-sm md:text-base font-light">
+          <p className="text-xs sm:text-sm md:text-base font-light text-[#30404D]">
             Customizable rules (time/usage/zone controls)
           </p>
         </div>
