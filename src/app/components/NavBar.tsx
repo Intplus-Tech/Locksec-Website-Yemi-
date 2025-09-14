@@ -61,24 +61,24 @@ export default function NavBar() {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden bg-white px-2 pb-4 space-y-4">
-          <ul className="flex flex-col gap-4 font-medium text-[16px]">
-            <li>
+        <div className="md:hidden bg-white px-2 pb-4 space-y-4 text-[#30404D]">
+          <ul className="flex flex-col gap-4 font-medium text-[16px] text-[#30404D]">
+            <li className="text-[#30404D]">
               <Link href="/" onClick={() => setIsOpen(false)}>
                 Home
               </Link>
             </li>
-            <li>
+            <li className="text-[#30404D]">
               <Link href="/" onClick={() => setIsOpen(false)}>
                 Features
               </Link>
             </li>
-            <li>
+            <li className="text-[#30404D]">
               <Link href="/" onClick={() => setIsOpen(false)}>
                 Price
               </Link>
             </li>
-            <li>
+            <li className="text-[#30404D]">
               <Link href="/" onClick={() => setIsOpen(false)}>
                 Contact
               </Link>
