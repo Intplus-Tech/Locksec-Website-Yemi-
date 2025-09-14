@@ -14,11 +14,11 @@ export default function VisitorCode() {
      
 
       {/* Heading */}
-      <div className="relative z-20 text-center sm:text-left">
-        <h2 className="text-base sm:text-lg md:text-2xl font-bold">
+      <div className="relative z-20 text-center sm:text-left text-[#30404D]">
+        <h2 className="text-base sm:text-lg md:text-2xl font-bold text-[#30404D]">
           Visitor Code Generation
         </h2>
-        <p className="mt-2 text-xs sm:text-sm md:text-base">
+        <p className="mt-2 text-xs sm:text-sm md:text-base text-[#30404D]">
           Create secure, time-bound access passes for every visitor type.
         </p>
       </div>

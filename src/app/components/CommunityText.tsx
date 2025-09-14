@@ -19,7 +19,7 @@ export default function CommunityText() {
         <p className="text-sm md:text-base text-[#30404D]">
           Centralized control for all estate residents, businesses,and
         </p>
-        <p className="text-sm md:text-base">security operation text-[#30404D]</p>
+        <p className="text-sm md:text-base text-[#30404D]">security operation </p>
       </div>
 
       {/* Block 2 */}
