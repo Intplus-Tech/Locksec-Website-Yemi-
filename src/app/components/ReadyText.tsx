@@ -31,7 +31,7 @@ export default function ReadyText() {
               <p className="font-semibold text-[#30404D]">gate entry</p>
               <p className="font-semibold text-[#30404D]">visitor pass</p>
               <p className="font-semibold text-[#30404D]">payment collected</p>
-              <p>...matters.</p>
+              <p className="text-[#30404D]">...matters.</p>
             </div>
 
             <div className="space-y-2">

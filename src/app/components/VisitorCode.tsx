@@ -7,7 +7,7 @@ export default function VisitorCode() {
     <section
       className="relative w-full max-w-[590px] min-h-[650px] mx-auto 
                  p-4 sm:p-6 
-                 bg-[url('/visitorframe-bg.png')] bg-cover bg-[position:45%_center] sm:bg-center bg-white 
+                 bg-[url('/Visitorframe-bg.png')] bg-cover bg-[position:45%_center] sm:bg-center bg-white 
                  border-2 border-gray-300 rounded-[24px] overflow-hidden 
                  flex flex-col"
     >
@@ -24,7 +24,7 @@ export default function VisitorCode() {
       </div>
 
       <div className="relative z-10 flex justify-center my-auto sm:my-6 px-2">
-        <PhoneImage />
+        <PhoneImage/>
      </div>
            
           
