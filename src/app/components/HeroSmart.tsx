@@ -52,7 +52,7 @@ export default function HeroSmart() {
             className="mt-8 w-[85%] sm:w-[90%] max-w-[655px] h-auto lg:mt-12 lg:w-[655px] lg:h-[420px]"
           />
           <Image
-            src="/Iphone-bg.png"
+            src="/NewIphone-bg.png"
             alt="iPhone"
             width={230}
             height={380}

@@ -5,7 +5,7 @@ export default function PhoneImage() {
   return (
     <div className="relative w-full flex justify-center">
       <Image
-        src="/Phone-bg.png"
+        src="/Newphone-bg.png"
         alt="PhoneImage"
         width={172}
         height={372}
