@@ -53,7 +53,7 @@ export default function NavBar() {
         {/* Mobile Hamburger */}
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="md:hidden p-2 rounded-lg border border-gray-300"
+          className="md:hidden p-2 rounded-lg border border-gray-300 bg-blue-600"
         >
           {isOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
