@@ -53,25 +53,13 @@ export default function HeroSmart() {
             className="mt-8 w-[85%] sm:w-[90%] max-w-[655px] h-auto lg:mt-12 lg:w-[655px] lg:h-[420px] lg:mr-[-2rem]"
           />
 
-          {/* iPhone Image */}
+         
           <Image
             src="/iphone-bg.svg"
             alt="My SVG"
             width={218}
             height={311}
-            className="
-              absolute
-              top-2
-              -right-[2rem]
-              bottom-4
-                             /* stay behind security-bg */
-              w-[35%] sm:w-[40%]   /* responsive sizing on mobile */
-              max-w-[200px]        /* don’t get too big */
-              h-auto
-              lg:bottom-[8rem] 
-              lg:w-[218px] lg:h-[311px] lg:z-auto /* restore desktop */
-            "
-          />
+            className="absolute top-2 -right-[1rem] bottom-4 w-[26%] sm:w-[35%] max-w-[200px]     h-auto lg:bottom-[8rem] lg:w-[218px] lg:h-[311px] lg:z-auto"/>
         </div>
       </section>
     </main>
