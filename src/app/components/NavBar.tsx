@@ -29,7 +29,7 @@ export default function NavBar() {
               <Link href="/">Features</Link>
             </li>
             <li className="text-[#36364ACC]">
-              <Link href="/">Price</Link>
+              <Link href="/">Pricing</Link>
             </li>
             <li className="text-[#36364ACC]">
               <Link href="/">Contact</Link>
@@ -75,7 +75,7 @@ export default function NavBar() {
             </li>
             <li className="text-[#30404D]">
               <Link href="/" onClick={() => setIsOpen(false)}>
-                Price
+                Pricing
               </Link>
             </li>
             <li className="text-[#30404D]">

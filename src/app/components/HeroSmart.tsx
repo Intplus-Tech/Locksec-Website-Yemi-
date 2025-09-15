@@ -44,24 +44,36 @@ export default function HeroSmart() {
       {/* IMAGE SECTION */}
       <section className="relative flex-shrink-0 flex items-center lg:-ml-[23.5rem]">
         <div className="relative w-full flex justify-center">
+          {/* Background Security Image */}
           <Image
             src="/security-bg.png"
             alt="Security"
             width={550}
             height={420}
-            className="mt-8 w-[85%] sm:w-[90%] max-w-[655px] h-auto lg:mt-12 lg:w-[655px] lg:h-[420px]"
+            className="mt-8 w-[85%] sm:w-[90%] max-w-[655px] h-auto lg:mt-12 lg:w-[655px] lg:h-[420px] lg:mr-[-2rem]"
           />
+
+          {/* iPhone Image */}
           <Image
-            src="/NewIphone-bg.png"
-            alt="iPhone"
-            width={230}
-            height={380}
-            className="absolute top-2 right-4 sm:right-9 w-[35%] sm:w-[40%] max-w-[230px] h-auto lg:w-[230px] lg:h-[380px]"
+            src="/iphone-bg.svg"
+            alt="My SVG"
+            width={218}
+            height={311}
+            className="
+              absolute
+              top-2
+              -right-[2rem]
+              bottom-4
+                             /* stay behind security-bg */
+              w-[35%] sm:w-[40%]   /* responsive sizing on mobile */
+              max-w-[200px]        /* don’t get too big */
+              h-auto
+              lg:bottom-[8rem] 
+              lg:w-[218px] lg:h-[311px] lg:z-auto /* restore desktop */
+            "
           />
         </div>
       </section>
-
-
     </main>
   );
 }
