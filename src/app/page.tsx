@@ -1,12 +1,14 @@
 import HeroPage from "./components/HeroPage";
 import SecondSection from "./components/SecondSection";
+import SectionDivider from "./components/SectionDivider";
 
 
 export default function HomePage(){
 
   return(
-    <main className="space-y-4 bg-[#EBF1F9]">
+    <main className="">
       <HeroPage />
+      <SectionDivider/>
       <SecondSection/>
     </main>
      
