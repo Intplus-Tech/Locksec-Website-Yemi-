@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import IphoneImage from "./IphoneImage";
 
 export default function HeroSmart() {
   // Track screen size
@@ -69,15 +70,7 @@ export default function HeroSmart() {
 
           {/* iPhone Image - render ONLY on desktop */}
           {isDesktop && (
-            <div className="hidden lg:block">
-              <Image
-                src="/iphone-bg.svg"
-                alt="My SVG"
-                width={218}
-                height={311}
-                className="absolute -right-[1rem] lg:bottom-[8rem] lg:w-[218px] lg:h-[311px] lg:z-auto"
-              />
-           </div>
+            <IphoneImage/>
            
           )}
         </div>
