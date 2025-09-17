@@ -69,13 +69,16 @@ export default function HeroSmart() {
 
           {/* iPhone Image - render ONLY on desktop */}
           {isDesktop && (
-            <Image
-              src="/iphone-bg.svg"
-              alt="My SVG"
-              width={218}
-              height={311}
-              className="absolute -right-[1rem] lg:bottom-[8rem] lg:w-[218px] lg:h-[311px] lg:z-auto"
-            />
+            <div className="hidden lg:block">
+              <Image
+                src="/iphone-bg.svg"
+                alt="My SVG"
+                width={218}
+                height={311}
+                className="absolute -right-[1rem] lg:bottom-[8rem] lg:w-[218px] lg:h-[311px] lg:z-auto"
+              />
+           </div>
+           
           )}
         </div>
       </section>
