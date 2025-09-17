@@ -1,5 +1,3 @@
-
-
 export default function IphoneImage() {
   return (
     <img
@@ -7,7 +5,7 @@ export default function IphoneImage() {
       alt="iPhone"
       width={218}
       height={311}
-      className=" hidden lg:block absolute -right-[1rem] lg:bottom-[8rem] lg:w-[218px] lg:h-[311px] lg:z-auto"
+      className="absolute -right-[1rem] lg:bottom-[8rem] lg:w-[218px] lg:h-[311px] lg:z-auto"
     />
   );
 }

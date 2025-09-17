@@ -8,10 +8,10 @@ export default function HeroSmart() {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsDesktop(window.innerWidth >= 1024); 
+      setIsDesktop(window.innerWidth >= 1024); // lg breakpoint
     };
 
-    handleResize(); 
+    handleResize(); // run once on mount
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
@@ -55,10 +55,10 @@ export default function HeroSmart() {
         </div>
       </section>
 
-  
+      {/* IMAGE SECTION */}
       <section className="relative flex-shrink-0 flex items-center lg:-ml-[23.5rem]">
         <div className="relative w-full flex justify-center">
-        
+          {/* Background Security Image */}
           <Image
             src="/security-bg.png"
             alt="Security"
@@ -67,7 +67,7 @@ export default function HeroSmart() {
             className="mt-8 w-[85%] sm:w-[90%] max-w-[655px] h-auto lg:mt-12 lg:w-[655px] lg:h-[420px] lg:mr-[-2rem]"
           />
 
-        
+          
           {isDesktop && <IphoneImage />}
         </div>
       </section>
