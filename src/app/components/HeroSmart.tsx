@@ -1,7 +1,21 @@
 "use client";
 import Image from "next/image";
+import { useEffect, useState } from "react";
 
 export default function HeroSmart() {
+  // Track screen size
+  const [isDesktop, setIsDesktop] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsDesktop(window.innerWidth >= 1024); // lg breakpoint
+    };
+
+    handleResize(); // run on mount
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <main className="flex flex-col-reverse lg:flex-row items-center justify-between w-full space-x-24">
       {/* TEXT SECTION */}
@@ -53,9 +67,8 @@ export default function HeroSmart() {
             className="mt-8 w-[85%] sm:w-[90%] max-w-[655px] h-auto lg:mt-12 lg:w-[655px] lg:h-[420px] lg:mr-[-2rem]"
           />
 
-
-          {/* iPhone image only on desktop */}
-          <div className="hidden lg:block">
+          {/* iPhone Image - render ONLY on desktop */}
+          {isDesktop && (
             <Image
               src="/iphone-bg.svg"
               alt="My SVG"
@@ -63,9 +76,8 @@ export default function HeroSmart() {
               height={311}
               className="absolute -right-[1rem] lg:bottom-[8rem] lg:w-[218px] lg:h-[311px] lg:z-auto"
             />
-          </div>
-
-           </div>
+          )}
+        </div>
       </section>
     </main>
   );
