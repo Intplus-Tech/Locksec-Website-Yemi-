@@ -59,7 +59,21 @@ export default function HeroSmart() {
             alt="My SVG"
             width={218}
             height={311}
-            className="absolute top-2 -right-[1rem] bottom-4 w-[26%] sm:w-[35%] max-w-[200px]     h-auto lg:bottom-[8rem] lg:w-[218px] lg:h-[311px] lg:z-auto" />
+            className="
+    absolute
+    -right-[1rem] 
+    w-[40%] sm:w-[35%] 
+    max-w-[200px] 
+    h-auto
+    top-2            /* small screens use only top */
+    lg:bottom-[8rem] /* desktop uses bottom positioning */
+    lg:top-auto      /* reset top on desktop */
+    lg:w-[218px] 
+    lg:h-[311px] 
+    lg:z-auto
+  "
+          />
+
         </div>
       </section>
     </main>
