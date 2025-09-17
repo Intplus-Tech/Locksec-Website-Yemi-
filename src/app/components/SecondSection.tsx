@@ -23,12 +23,13 @@ export default function secondSection(){
           <VisitorAdmin/>
           <PaymentSection/>
           <RightplanSection/>
-          <ReadySecure/>
-          <FooterBox/>
-
-      </div>
+         
+         
+       </div>
       
     </ContentWrapper>
+        <ReadySecure />
+        <FooterBox />
    </main>
 
   )

@@ -9,10 +9,9 @@ export default function AdminDashboard() {
              p-5 sm:p-6 lg:p-8
              bg-[url('/Adminframe-bg.png')] bg-cover bg-[position:50%_center] sm:bg-center bg-white 
              border border-gray-300 rounded-[24px] overflow-hidden 
-             flex flex-col"
-    >
-      
-     
+             flex flex-col">
+
+
       {/* Section heading */}
       <div className="relative z-10 text-center px-2">
         <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-[#30404D]">

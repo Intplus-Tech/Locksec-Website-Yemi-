@@ -16,7 +16,7 @@ export default function AccessSection() {
       {/* Subtext */}
       <div className="w-full max-w-[725px] min-h-[75px] opacity-100 flex flex-col justify-center items-center px-4 text-sm sm:text-base md:text-lg lg:text-[18px] text-[#000000] text-center">
         <p className="text-[#000000]">
-        
+
           Our solution transforms gate security and resident convenience through interactive,
         </p>
         <p className="text-[#000000]">

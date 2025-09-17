@@ -2,17 +2,21 @@
 
 import Image from "next/image";
 import { FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
+import ContentWrapper from "./ContentWrapper";
+
 
 export default function ReadyText() {
   return (
-    <section className="flex flex-col lg:flex-row justify-center items-center p-6 lg:p-20 my-auto">
+   <ContentWrapper>
+    <section className="flex flex-col lg:flex-row justify-center items-center lg:p-20">
+    
       <div className="space-y-6 w-full max-w-[1200px]">
         {/* Title + Button */}
         <div className="mb-10 lg:mb-16">
           <p
-            className="font-inter font-bold text-[32px] sm:text-[40px] lg:text-[60px] 
+            className="font-inter font-bold text-[32px] sm:text-[40px] lg:text-[58px] 
                        leading-tight lg:leading-[64.8px]  relative 
-                       top-0 lg:top-[-12px] w-full lg:w-[350px] h-auto text-[#30404D]"
+                       top-0 lg:top-[-12px] w-full lg:w-[350px] h-auto text-[#FFFFFF]"
           >
             Ready to secure your community?
           </p>
@@ -25,7 +29,7 @@ export default function ReadyText() {
         {/* Content boxes */}
         <div className="flex flex-col lg:flex-row gap-6 lg:gap-4 ">
           {/* Left card */}
-          <div className="w-full sm:w-[350px] h-auto lg:h-[362px] rounded-[24px] bg-[#FFFFFF] space-y-5 p-4">
+          <div className="w-[461px] sm:w-[350px] h-auto lg:h-[362px] rounded-[24px] bg-[#FFFFFF] space-y-5 p-4">
             <div className="text-[24px] sm:text-[28px] lg:text-[32.28px]">
               <p className="text-[#30404D]">Every...</p>
               <p className="font-semibold text-[#30404D]">gate entry</p>
@@ -93,6 +97,8 @@ export default function ReadyText() {
           </div>
         </div>
       </div>
+   
     </section>
+    </ContentWrapper>
   );
 }
