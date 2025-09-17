@@ -1,8 +1,8 @@
-import Image from "next/image";
+
 
 export default function IphoneImage() {
   return (
-    <Image
+    <img
       src="/iphone-bg.svg"
       alt="iPhone"
       width={218}
