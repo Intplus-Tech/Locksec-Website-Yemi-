@@ -1,21 +1,9 @@
 "use client";
 import Image from "next/image";
-import { useEffect, useState } from "react";
 import IphoneImage from "./IphoneImage";
 
 export default function HeroSmart() {
-  const [isDesktop, setIsDesktop] = useState(false);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsDesktop(window.innerWidth >= 1024); // lg breakpoint
-    };
-
-    handleResize(); // run once on mount
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
+ 
   return (
     <main className="flex flex-col-reverse lg:flex-row items-center justify-between w-full space-x-24">
       {/* TEXT SECTION */}
@@ -68,7 +56,7 @@ export default function HeroSmart() {
           />
 
           
-          {isDesktop && <IphoneImage />}
+          <IphoneImage />
         </div>
       </section>
     </main>

@@ -6,11 +6,10 @@ export default function IphoneImage() {
   const [isDesktop, setIsDesktop] = useState(false);
 
   useEffect(() => {
-    // check on mount
+   
     const checkSize = () => setIsDesktop(window.innerWidth >= 1024);
     checkSize();
 
-    // listen for resize
     window.addEventListener("resize", checkSize);
     return () => window.removeEventListener("resize", checkSize);
   }, []);
