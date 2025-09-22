@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import IphoneImage from "./IphoneImage";
+
 
 export default function HeroSmart() {
  
@@ -56,7 +56,7 @@ export default function HeroSmart() {
           />
 
           
-          <IphoneImage />
+          
         </div>
       </section>
     </main>
